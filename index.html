@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+    <canvas id="particles-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <!-- Interactive Background -->
+    <div class="interactive-bg"></div>
+
+    <!-- Parallax Layers -->
+    <div class="parallax-layer parallax-layer-1"></div>
+    <div class="parallax-layer parallax-layer-2"></div>
+    <div class="parallax-layer parallax-layer-3"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Card -->
+        <div class="profile-card reveal" id="profile-card">
+            <div class="avatar-container">
+                <img src="assets/avatar.svg" alt="Avatar" class="avatar reveal reveal-scale hover-lift hover-glow" id="avatar">
+                <div class="avatar-glow"></div>
+            </div>
+            <h1 class="name reveal reveal-left hover-glow" id="name">Yjing</h1>
+            <p class="bio reveal reveal-right hover-glow" id="bio">Full-Stack Developer passionate about creating elegant and efficient solutions</p>
+
+            <div class="divider"></div>
+
+            <div class="social-links reveal reveal-left">
+                <a href="https://github.com/yjing-833" class="social-link github hover-lift hover-glow hover-scale" id="github-link">
+                    <span class="link-text">GitHub</span>
+                    <div class="link-hover"></div>
+                </a>
+                <a href="#" class="social-link projects hover-lift hover-glow hover-scale" id="projects-link">
+                    <span class="link-text">Projects</span>
+                    <div class="link-hover"></div>
+                </a>
+                <a href="#" class="social-link contact hover-lift hover-glow hover-scale" id="contact-link">
+                    <span class="link-text">Contact</span>
+                    <div class="link-hover"></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="particles.js"></script>
+    <script src="effects.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
